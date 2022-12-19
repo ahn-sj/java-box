@@ -33,5 +33,4 @@ class CustomArrayListTest {
         // when & when
         assertThat(customList.size()).isEqualTo(arrayList.size());
     }
-
 }
