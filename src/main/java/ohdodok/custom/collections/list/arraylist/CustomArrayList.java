@@ -4,16 +4,6 @@ package ohdodok.custom.collections.list.arraylist;
  * Reference
  * https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
  *
- * // 1. Constructor
- * public ArrayList()
- * public ArrayList(int initialCapacity)
- *
- * // 2. add
- * boolean add(E e): Appends the specified element to the end of this list.
- *
- * // 3. get
- * E get(int index): Returns the element at the specified position in this list.
- *
  * // 4. remove
  * E remove(int index): Removes the element at the specified position in this list.
  */

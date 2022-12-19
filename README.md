@@ -1,10 +1,11 @@
-## Java Custom
-
-### src : [이동](https://github.com/ahn-sj/Java-Custom/tree/main/src/main/java/ohdodok/custom)
-### test: [이동](https://github.com/ahn-sj/Java-Custom/tree/main/src/test/java/ohdodok/custom)
+## Java Custom Box
 
 ---
 
 ### STEP 01. JAVA Collections
-01-01. ArrayList
+
+### [Go To README](https://github.com/ahn-sj/java-custom-box/blob/main/src/main/java/ohdodok/custom/collections/list/README.md)
+
+01-01. ArrayList <br/>
+01-02. LinkedList
 
