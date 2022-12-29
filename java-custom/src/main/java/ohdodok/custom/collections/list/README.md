@@ -1,10 +1,31 @@
 ## 배열 리스트(ArrayList)와 연결 리스트(LinkedList)
 
-### 연결 리스트(Linked List)
+### 배열 리스트(ArrayList)
 
 ---
 
-연결리스트는 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식의 자료구조이다. 시간복잡도 O(n)
+배열리스트는 일반 배열과 동일하게 연속된 메모리를 사용하여 크기가 가변적인 선형리스트이다. <br/>
+get() 기준 시간복잡도 O(1)
+
+![img.png](img/img.png)
+이미지 출처: [scaler](https://www.scaler.com/topics/java/arraylist-in-java/)
+
+
+ArrayList를 구현하면서 초기 capacity의 값 설정을 이해하는데 어려움이 있었다. <br/>
+https://github.com/ahn-sj/java-custom-box/issues/5
+
+공식 문서에 의하면 매개변수에 값을 주지 않은 경우 초기 capacity의 값이 10으로 설정된다고 하는데 실제로 기본 생성자가 동작되는 코드로 가면 `Object[] elementData = {}`로 설정되도록 되어있었다.
+
+
+---
+
+
+### 연결 리스트(LinkedList)
+
+---
+
+연결리스트는 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식의 자료구조이다.<br/>
+get()기준 시간복잡도 O(n)
 
 ![img_3.png](img/img_3.png)
 이미지 출처: [생활코딩](https://opentutorials.org/module/1335/8857)
@@ -135,3 +156,8 @@ head   = Node{data=강낭콩}
 Node 1 = Node{data=검은콩}
 Node 2 = Node{data=머리콩}
 ```
+
+<br/>
+
+참고
+https://gusdnd852.tistory.com/100 <br/>
