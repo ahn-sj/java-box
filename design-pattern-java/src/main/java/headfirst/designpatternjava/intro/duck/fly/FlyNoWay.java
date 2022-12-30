@@ -1,4 +1,4 @@
-package headfirst.desingpatternjava.intro.duck.fly;
+package headfirst.designpatternjava.intro.duck.fly;
 
 public class FlyNoWay implements FlyBehavior {
     @Override

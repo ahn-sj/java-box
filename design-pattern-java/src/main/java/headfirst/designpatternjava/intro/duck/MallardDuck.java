@@ -1,7 +1,7 @@
-package headfirst.desingpatternjava.intro.duck;
+package headfirst.designpatternjava.intro.duck;
 
-import headfirst.desingpatternjava.intro.duck.fly.FlyWithWings;
-import headfirst.desingpatternjava.intro.duck.quack.Quack;
+import headfirst.designpatternjava.intro.duck.fly.FlyWithWings;
+import headfirst.designpatternjava.intro.duck.quack.Quack;
 
 public class MallardDuck extends Duck {
 

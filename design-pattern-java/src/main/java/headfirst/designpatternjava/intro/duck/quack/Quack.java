@@ -1,4 +1,4 @@
-package headfirst.desingpatternjava.intro.duck.quack;
+package headfirst.designpatternjava.intro.duck.quack;
 
 public class Quack implements QuackBehavior {
     @Override

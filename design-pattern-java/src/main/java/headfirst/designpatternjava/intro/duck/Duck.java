@@ -1,7 +1,7 @@
-package headfirst.desingpatternjava.intro.duck;
+package headfirst.designpatternjava.intro.duck;
 
-import headfirst.desingpatternjava.intro.duck.fly.FlyBehavior;
-import headfirst.desingpatternjava.intro.duck.quack.QuackBehavior;
+import headfirst.designpatternjava.intro.duck.fly.FlyBehavior;
+import headfirst.designpatternjava.intro.duck.quack.QuackBehavior;
 
 public abstract class Duck {
 
