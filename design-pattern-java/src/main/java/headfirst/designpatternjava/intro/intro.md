@@ -63,3 +63,58 @@ a.makeSound();
 
 
 
+### 동적으로 행동을 지정하는 방법
+
+오리의 행동 형식을 생성자에서 인스턴스를 만드는 방법이 아닌 Duck의 서브클래스에서 세터를 호출하는 방법으로 설정하도록 한다.
+
+```java
+// Duck.java
+public void setFlyBehavior(FlyBehavior flyBehavior) {
+    this.flyBehavior = flyBehavior;
+}
+
+public void setQuackBehavior(QuackBehavior quackBehavior) {
+    this.quackBehavior = quackBehavior;
+}
+```
+
+그 결과 다음과 같은 결과가 나온다
+```java
+ModelDuck modelDuck = new ModelDuck();
+modelDuck.performFly();
+modelDuck.setFlyBehavior(new FlyRocketPowered());
+modelDuck.performFly();
+```
+```
+꽥!
+난다!
+============
+못 난다!
+로켓만큼 빠르다!
+```
+
+<br/>
+
+지금까지의 내용들을 정리하면 다음과 같다.
+
+**오리들은 전부 Duck을 확장해서 만들고, 나는 행동과 꽥꽥 소리를 내는 행동은 구현해서 만든다.**
+
+![img.png](img/rst_duck.png)
+
+"A에는 B가 있다" 관계는 구성(composition)을 이용하는 것이라고 한다. <br/>
+여기에 나와있는 오리 클래스에서는 행동을 상속받는 대신, 올바른 행동 객체가 구성됨으로써 행동을 부여받게 된다.
+
+> 디자인 원칙 3
+> 상속보다는 구성을 활용한다.
+
+지금까지 봐 왔던 것처럼 구성을 이용하여 시스템을 만들면 유연성을 크게 향상시킬 수 있다.
+
+
+---
+
+지금까지 한 것은 전략 패턴(Strategy Pattern)을 적용한 것이다.
+
+```
+전략 패턴은 알고리즘군을 정의하고 각각을 캡슐화하여 교환해서 사용할 수 있도록 만든다.
+전략 패턴을 활용하면 알고리즘을 사용하는 클라이언트와는 독립적으로 알고리즘을 변경할 수 있다.
+```
