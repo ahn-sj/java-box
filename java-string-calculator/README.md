@@ -16,3 +16,9 @@
 - [ ] 공백 검사
 - [ ] 0 / 0 예외 처리 (ArithmeticException)
 - [ ] 결과 값 리턴
+
+---
+
+사칙연산(+,-,*,/)을 어떻게 구분자로 나눌 것인지
+1. split, StringTokenizer는 순서를 지키지 못할 것 
+2. Pattern API로 사용할 수 있는지 찾아보기 
