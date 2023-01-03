@@ -1,14 +1,43 @@
 package headfirst.designpatternjava.observerpattern;
 
-public class WeatherData {
+import java.util.ArrayList;
+import java.util.List;
+
+public class WeatherData implements Subject {
+    private List<Observer> observers = new ArrayList();
+    private float temperature;
+    private float humidity;
+    private float pressure;
+
+    public void setMeasurements(float temperature, float humidity, float pressure) {
+        this.temperature = temperature;
+        this.humidity = humidity;
+        this.pressure = pressure;
+        measurementsChanged();
+    }
 
     public void measurementsChanged() {
-        float temp = getTemperature();  // 온도
-        float humidity = getHumidity(); // 습도
-        float pressure = getPressure(); // 기압
+        notifyObservers();
+    }
 
-        currentConditionsDisplay.update(temp, humidity, pressure); // 디스플레이1. 현재 기상 조건
-        statisticsDisplay.update(temp, humidity, pressure);        // 디스플레이2. 기상 통계
-        forecastDisplay.update(temp, humidity, pressure);          // 디스플레이3. 기상 예측 항목
+    @Override
+    public void registerObserver(Observer observer) {
+        observers.add(observer);
+
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        int index = observers.indexOf(observer);
+        if(index >= 0) {
+            observers.remove(index);
+        }
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(temperature, humidity, pressure);
+        }
     }
 }
