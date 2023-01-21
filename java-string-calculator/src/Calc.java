@@ -18,8 +18,9 @@ public class Calc {
             Character operator = operators.poll();
             int operand = Integer.parseInt(operands[i]);
 
-            calculator(rst, operator, operand);
+            rst = calculator(rst, operator, operand);
         }
+        System.out.println(rst);
     }
 
     private static Queue<Character> divideOperator(String input) {
@@ -46,7 +47,6 @@ public class Calc {
             isDivideZero(operand);
             rst /= operand;
         }
-        System.out.println("rst = " + rst);
         return rst;
     }
 
