@@ -13,7 +13,6 @@ public class Calc {
         String[] operands = divideOperand(input);
 
         int rst = Integer.parseInt(operands[0]);
-
         for (int i = 1; i < operands.length; i++) {
             Character operator = operators.poll();
             int operand = Integer.parseInt(operands[i]);
@@ -28,7 +27,7 @@ public class Calc {
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
 
-            if(isValidRange(input, i, c)) {
+            if(isValidRange(c)) { // +, -, *, /
                 queue.offer(input.charAt(i));
             }
         }
@@ -50,8 +49,8 @@ public class Calc {
         return rst;
     }
 
-    private static boolean isValidRange(String input, int i, char c) {
-        return !(c - '0' >= 0 && input.charAt(i) - '0' < 10);
+    private static boolean isValidRange(char c) {
+        return !(c - '0' >= 0 && c - '0' < 10);
     }
 
     private static void isDivideZero(int operand) {
