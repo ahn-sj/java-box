@@ -1,0 +1,21 @@
+
+`	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+g	java:S112Y"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8æ”Ëˆö0
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+=
+java:S2189U""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+D
+java:S2140")Use "java.util.Random.nextInt()" instead.(ƒ–³üÿÿÿÿ
+t
+java:S2142#"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+h	java:S116,"SRename this field "MAX_FOOD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èõòê
+7
+java:S1170,"!Make this final field static too.(Èõòê
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(¦¦åö
+D
+java:S5413;")Verify that "remove()" is used correctly.(ïÿ£æùÿÿÿÿ
+{
+java:S2142X"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ş”Ëˆö0
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(£¢­Äúÿÿÿÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(Ìëïßûÿÿÿÿ

@@ -1,0 +1,9 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+e
+java:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»ãßºøÿÿÿÿ8ÔØáØõ0
+?
+java:S2140$")Use "java.util.Random.nextInt()" instead.(ŞØ¼Ã
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(ïåç

@@ -1,0 +1,29 @@
+
+`	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(“Ç“È¸ˇˇˇˇ
+`	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(“Ç“È¸ˇˇˇˇ
+g	java:S112e"FDefine and throw a dedicated exception instead of using a generic one.(“Ç“È¸ˇˇˇˇ8ÏπÙàˆ0
+=
+java:S2189a""Add an end condition to this loop.(òÔàûˇˇˇˇˇ
+=
+java:S2189""Add an end condition to this loop.(òÔàûˇˇˇˇˇ
+D
+java:S2140")Use "java.util.Random.nextInt()" instead.(Éñê≥¸ˇˇˇˇ
+t
+java:S2142#"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‰†πÄ
+h	java:S116,"SRename this field "MAX_FOOD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ıÚÍ
+7
+java:S1170,"!Make this final field static too.(»ıÚÍ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(¶¶Âˆ
+T
+java:S1155:">Use isEmpty() to check whether the collection is empty or not.(¶â Ó
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(¬´∫ﬂ
+t
+java:S2142@"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‰†πÄ
+e
+java:S2276?"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(Ä≠Ì‹¸ˇˇˇˇ8Ñ∫Ùàˆ0
+K
+java:S5413F")Verify that "remove()" is used correctly.(Ôˇ£Ê˘ˇˇˇˇ8Ÿäˆàˆ0
+{
+java:S2142d"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‰†πÄ8Ü∫Ùàˆ0
+S	java:S106k"9Replace this use of System.out or System.err by a logger.(£¢≠ƒ˙ˇˇˇˇ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(ÃÎÔﬂ˚ˇˇˇˇ
